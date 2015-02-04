@@ -1,0 +1,476 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do lab2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/johnn_000/Dropbox/Lab2/141lab2 {C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:47:38 on Feb 03,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johnn_000/Dropbox/Lab2/141lab2" C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(20): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(21): (vlog-2110) Illegal reference to net "regB".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(23): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(24): (vlog-2110) Illegal reference to net "regB".
+# 
+# End time: 22:47:38 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./lab2_run_msim_rtl_verilog.do line 8
+# C:/altera/14.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/johnn_000/Dropbox/Lab2/141lab2 {C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv}"
+cd C:/Users/johnn_000/Dropbox/Lab2/141lab2
+# reading C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini
+vlib work
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 22:48:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(20): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(21): (vlog-2110) Illegal reference to net "regB".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(23): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(24): (vlog-2110) Illegal reference to net "regB".
+# 
+# End time: 22:48:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:48:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:59 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 22:48:59 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:59 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(20): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(21): (vlog-2110) Illegal reference to net "regB".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(23): (vlog-2110) Illegal reference to net "regA".
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(24): (vlog-2110) Illegal reference to net "regB".
+# 
+# End time: 22:48:59 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:48:59 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:48:59 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:50:58 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 22:50:58 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:50:58 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(18): (vlog-2730) Undefined variable: 'regA'.
+# 
+# ** Error: C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv(19): near "assign": syntax error, unexpected assign, expecting ';' or ','
+# End time: 22:50:58 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:50:58 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:50:59 on Feb 03,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:53:16 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 22:53:16 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:53:16 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 22:53:16 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:53:16 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:53:16 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim -gui "+altera" -l msim_transcript -do "lab2_run_msim_rtl_verilog.do" 
+# Start time: 22:54:15 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+# ** Error: (vsim-3063) C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv(46): Port 'regA' not found in the connected module (9th connection).
+# 
+#         Region: /testbench/b2v_inst
+# ** Error: (vsim-3063) C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv(46): Port 'regB' not found in the connected module (10th connection).
+# 
+#         Region: /testbench/b2v_inst
+# Error loading design
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:59:47 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 22:59:47 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:59:47 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 22:59:47 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 22:59:47 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:59:47 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim 
+# Start time: 22:59:57 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:06:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 23:06:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:06:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 23:06:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:06:13 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:06:13 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim 
+# Start time: 23:06:26 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o \
+sim:/testbench/regB_o \
+sim:/testbench/lable_write \
+sim:/testbench/lable_read
+vsim work.testbench
+# vsim 
+# Start time: 23:07:33 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+# internal error on MenuItemCan
+# m is .mBar.file label is End Simulation state is disabled
+#  Trace back: 
+#    <5:eval:1: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled
+#    >4:proc:1540: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}}
+#    <3:eval:1: ::namespace inscope ::Wave {.main_pane.wave.interior.cs.body.pw.wf.tree Action} .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}}
+#    >2:eval:1: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}}
+#    <1:proc:107: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState
+run
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o \
+sim:/testbench/regB_o \
+sim:/testbench/lable_write \
+sim:/testbench/lable_read
+# Break key hit
+# Break in Module register_file at C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv line 27
+restart -f
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o \
+sim:/testbench/regB_o \
+sim:/testbench/lable_write \
+sim:/testbench/lable_read
+run -all
+# Break key hit
+# Break in Module register_file at C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv line 27
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:13:00 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 23:13:00 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:13:00 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 23:13:00 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:13:00 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:13:00 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim 
+# Start time: 23:13:13 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o \
+sim:/testbench/regB_o \
+sim:/testbench/lable_write \
+sim:/testbench/lable_read
+run -all
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:48 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 23:15:48 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:48 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 23:15:48 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:48 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:15:48 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:50 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/lab2.v 
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# End time: 23:15:50 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:50 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 23:15:50 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 23:15:50 on Feb 03,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:15:50 on Feb 03,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+# Break in Module register_file at C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv line 27
+vsim work.testbench
+# vsim 
+# Start time: 23:16:27 on Feb 03,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.register_file
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/rs1 \
+sim:/testbench/rs2 \
+sim:/testbench/rd \
+sim:/testbench/write_data \
+sim:/testbench/reg_write \
+sim:/testbench/label_write \
+sim:/testbench/label_read \
+sim:/testbench/regA_o \
+sim:/testbench/regB_o \
+sim:/testbench/lable_write \
+sim:/testbench/lable_read
+run -all
+add wave  \
+sim:/testbench/b2v_inst2/clk \
+sim:/testbench/b2v_inst2/rs1 \
+sim:/testbench/b2v_inst2/rs2 \
+sim:/testbench/b2v_inst2/rd \
+sim:/testbench/b2v_inst2/write_data \
+sim:/testbench/b2v_inst2/reg_write \
+sim:/testbench/b2v_inst2/label_write \
+sim:/testbench/b2v_inst2/label_read \
+sim:/testbench/b2v_inst2/regA_o \
+sim:/testbench/b2v_inst2/regB_o \
+sim:/testbench/b2v_inst2/regA \
+sim:/testbench/b2v_inst2/regB \
+sim:/testbench/b2v_inst2/general_registers \
+sim:/testbench/b2v_inst2/label_registers
+# Break key hit
+# Break in Module register_file at C:/Users/johnn_000/Dropbox/Lab2/141lab2/register_file.sv line 27
+# End time: 23:24:42 on Feb 03,2015, Elapsed time: 0:08:15
+# Errors: 0, Warnings: 0
