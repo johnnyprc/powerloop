@@ -19,6 +19,8 @@ initial begin
 	label_write = 0;     // initial value of label_write
 	label_read = 0;     // initial value of lable_read
 	write_data = 8'b00000001;
+	rs1 = 3'b001;
+	rs2 = 3'b010;
 	rd = 3'b000;
 
 	

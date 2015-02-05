@@ -1,0 +1,27 @@
+module alu_testbench();
+reg [3:0] opcode;
+reg [7:0] alu_rs1;
+reg [7:0] alu_rs2;
+reg [1:0] constant;
+wire [7:0] aluOut;
+wire overflow;
+
+initial begin
+	opcode = 4'b0000;
+	alu_rs1 = 8'b00000001;
+	alu_rs2 = 8'b00000000;
+	constant = 2'b00;
+	
+	#10 opcode = 4'b0011; // shift left
+	#10 constant = 2b'01; // shift left by 1 bit
+end
+
+
+alu	b2v_inst2(
+	.alu_rs1(alu_rs1),
+	.alu_rs2(alu_rs2),
+	.constant(constant),
+	.opcode(opcode),
+	.overflow(overflow),
+	.aluOut(aluOut));
+endmodule

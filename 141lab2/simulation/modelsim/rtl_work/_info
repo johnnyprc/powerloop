@@ -7,4 +7,28 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/johnn_000/Dropbox/Lab2/141lab2/simulation/modelsim
+Z0 dC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim
+vregister_file
+DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1423110172
+!i10b 1
+!s100 [0lfd9eQBG=_]ozmLX25V2
+IMU3Q]Kh[BVQ@1Cl75nDil1
+V`JN@9S9cnhjKRR_L]QIcM3
+!s105 register_file_sv_unit
+S1
+R0
+w1423089052
+8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv
+FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv
+L0 1
+OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1423110172.004000
+!s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2

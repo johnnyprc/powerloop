@@ -18,7 +18,7 @@ reg [7:0] label_registers[5:0]; // l0 - l5
 assign regA_o = regA;
 assign regB_o = regB;
 
-always begin
+always_comb begin
 	if (label_read != 0) begin
 		regA = label_registers[rs1];
 		regB = label_registers[rs2];
