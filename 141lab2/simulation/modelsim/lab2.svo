@@ -17,7 +17,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
 
-// DATE "02/04/2015 22:40:01"
+// DATE "02/05/2015 23:49:54"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -40,16 +40,16 @@ module register_file (
 	label_read,
 	regA_o,
 	regB_o);
-input 	clk;
-input 	[2:0] rs1;
-input 	[2:0] rs2;
-input 	[2:0] rd;
-input 	[7:0] write_data;
-input 	reg_write;
-input 	label_write;
-input 	label_read;
-output 	[7:0] regA_o;
-output 	[7:0] regB_o;
+input 	reg clk ;
+input 	logic [2:0] rs1 ;
+input 	logic [2:0] rs2 ;
+input 	logic [2:0] rd ;
+input 	logic [7:0] write_data ;
+input 	reg reg_write ;
+input 	reg label_write ;
+input 	reg label_read ;
+output 	logic [7:0] regA_o ;
+output 	logic [7:0] regB_o ;
 
 // Design Ports Information
 // regA_o[0]	=>  Location: PIN_F8,	 I/O Standard: 2.5 V,	 Current Strength: Default

@@ -1,4 +1,5 @@
 module fetch_unit(
+	input f_clk,
 	input [7:0] pc_i,
 	input start,
 	input [7:0] start_addr,
@@ -13,14 +14,15 @@ assign pc_o = pc_next;
 
 always_comb begin
 	if (start == 1)
-		pc = start_addr;
-	else
-		pc = pc_i;
+		pc_next = start_addr;
 	
-	if (branch == 1 && taken == 1)
+	if (taken == 1)
 		pc_next = target;
-	else
+	else if(taken == 0 && start != 1)
 		pc_next = pc + 1;
 end
+
+always_ff @(posedge f_clk)
+	pc <= pc_next;
 
 endmodule

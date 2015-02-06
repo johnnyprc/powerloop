@@ -10,15 +10,15 @@ cModel Technology
 dC:/Users/johnn_000/Dropbox/Lab2/141lab2
 valu
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-!s110 1423112452
+!s110 1423195601
 !i10b 1
-!s100 QnCKXYm3RBkKQmhg9hDTU0
-IJ5FG4BI75dceJ2>WaE8Y^3
+!s100 LWTJEQICBG01aC^iizV>l3
+Ing88Z>ZElNm9gB=c1hhf`2
 Z1 V`JN@9S9cnhjKRR_L]QIcM3
 !s105 alu_sv_unit
 S1
 Z2 dC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2
-w1423112388
+w1423195185
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv
 L0 1
@@ -26,22 +26,22 @@ Z3 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1423112452.207000
+!s108 1423195601.418000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv|
 !i113 1
 Z4 o-work work
 valu_testbench
 R0
-!s110 1423113876
+!s110 1423195604
 !i10b 1
-!s100 fSbV?]ln66D=F7`AJ;eWS2
-If8N2AR]Bf0TRi^NYDo[;I2
+!s100 boA>BicoM<[d[`2MSQID]2
+Iiof4@9D1VoOFJQ7]fj<AF0
 R1
 !s105 alu_testbench_sv_unit
 S1
 R2
-w1423113871
+w1423195372
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv
 L0 1
@@ -49,14 +49,60 @@ R3
 r1
 !s85 0
 31
-!s108 1423113876.806000
+!s108 1423195604.819000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv|
 !i113 1
 R4
+vfetch_unit
+R0
+!s110 1423209081
+!i10b 1
+!s100 OPg<6M_FF]3@39;;cF=cJ3
+Ioa9d:9zQTiPM^]V0cog4F3
+R1
+!s105 fetch_unit_sv_unit
+S1
+R2
+w1423208981
+8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv
+FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1423208896.596000
+!s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv|
+!i113 1
+R4
+vfetch_unit_testbench
+R0
+!s110 1423209088
+!i10b 1
+!s100 8QOXMV^hiO_?Xb64gamXK2
+Ih@JLPVj]jYKomOiah7NkS1
+R1
+!s105 fetch_unit_testbench_sv_unit
+S1
+R2
+w1423208979
+8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv
+FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1423209088.967000
+!s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv|
+!i113 1
+R4
 vinst_rom
 R0
-Z5 !s110 1423118630
+!s110 1423118630
 !i10b 1
 !s100 TAHd?X9EzDYJEUELKBmR[3
 ILIG>6DUS1m<]ZS<Mm@T_Y3
@@ -78,13 +124,13 @@ r1
 !i113 1
 R4
 vlab2
-R5
+!s110 1423205826
 !i10b 1
-!s100 j7gZF1NCY2DF=Y89;U?>B1
-I]3@e_^h8X8@H>jMz7Vm8C3
+!s100 RR8@`OZ5?K9g2EDE87K7S3
+IKbUAaF9FEbZ2o9YZCPW7X3
 R1
 R2
-w1423117691
+w1423205462
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v
 L0 20
@@ -92,22 +138,22 @@ R3
 r1
 !s85 0
 31
-!s108 1423118630.154000
+!s108 1423205826.147000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v|
 !i113 1
 R4
 vregister_file
 R0
-!s110 1423102150
+!s110 1423198934
 !i10b 1
-!s100 [0lfd9eQBG=_]ozmLX25V2
-IIcaO2XHDFY7K2BglgfI1[3
+!s100 I7ejZz9]6C2CjHiJNeQR=2
+IXb;46CIM<kg^H7TjnUcDM2
 R1
 !s105 register_file_sv_unit
 S1
 R2
-w1423089052
+w1423198720
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv
 L0 1
@@ -115,22 +161,22 @@ R3
 r1
 !s85 0
 31
-!s108 1423102150.791000
+!s108 1423198934.127000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv|
 !i113 1
 R4
 vrom_testbench
 R0
-R5
+!s110 1423201579
 !i10b 1
-!s100 5l1@k@KJ=zleOJh5Lg2Fc2
-IOUEN]`M]_>Vm13NMB>zDk3
+!s100 fklD]c`CMofM[F0HemcAe2
+I7cjdE?AQXYChaeA04o=S[3
 R1
 !s105 rom_testbench_sv_unit
 S1
 R2
-w1423118352
+w1423201574
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv
 L0 1
@@ -138,22 +184,22 @@ R3
 r1
 !s85 0
 31
-!s108 1423118630.248000
+!s108 1423201579.960000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv|
 !i113 1
 R4
 vtestbench
 R0
-!s110 1423090444
+!s110 1423200410
 !i10b 1
-!s100 5Yji=RTYOBaIF=B@F44fk0
-IZ:4j0j3J2KQ9YQP0heg9>3
+!s100 DWjM5D:ml15Tzi9h0bIjP3
+IH38^a`Kk04Obo577aHn0m3
 R1
 !s105 testbench_sv_unit
 S1
 R2
-w1423088955
+w1423200362
 8C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv
 FC:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv
 L0 1
@@ -161,7 +207,7 @@ R3
 r1
 !s85 0
 31
-!s108 1423090444.509000
+!s108 1423200410.788000
 !s107 C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv|
 !i113 1

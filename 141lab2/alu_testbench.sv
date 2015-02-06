@@ -6,12 +6,18 @@ reg [1:0] constant;
 wire [7:0] aluOut;
 wire overflow;
 
-initial begin	
-	// TEST ADD: set rs2 = 4 and test 1 + 4
+initial begin
+
+		
+	// TEST ADD: set rs2 = 255 and test overflow
 	opcode = 4'b0000;
-	alu_rs1 = 8'b00000100;
-	alu_rs2 = 8'b00000001;
+	alu_rs1 = 8'b00000001;
+	alu_rs2 = 8'b11111111;
 	constant = 2'b00;
+	
+	// TEST ADD: set rs2 = 4 and test 1 + 4
+	#10 alu_rs2 = 8'b00000100; 
+	
 	
 	// TEST ADDDI: set const to -1. 4 + -1
 	#10 opcode = 4'b0001;

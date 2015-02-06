@@ -15,7 +15,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
-// CREATED		"Wed Feb 04 22:28:11 2015"
+// CREATED		"Thu Feb 05 22:51:02 2015"
 
 module lab2(
 	clk,
@@ -25,6 +25,7 @@ module lab2(
 	start,
 	branch,
 	taken,
+	f_clk,
 	address_i,
 	alu_rs1,
 	alu_rs2,
@@ -34,7 +35,7 @@ module lab2(
 	rd,
 	rs1,
 	rs2,
-	start_add,
+	start_addr,
 	target,
 	write_data,
 	overflow,
@@ -53,6 +54,7 @@ input wire	label_read;
 input wire	start;
 input wire	branch;
 input wire	taken;
+input wire	f_clk;
 input wire	[7:0] address_i;
 input wire	[7:0] alu_rs1;
 input wire	[7:0] alu_rs2;
@@ -62,7 +64,7 @@ input wire	[7:0] pc_i;
 input wire	[2:0] rd;
 input wire	[2:0] rs1;
 input wire	[2:0] rs2;
-input wire	[7:0] start_add;
+input wire	[7:0] start_addr;
 input wire	[7:0] target;
 input wire	[7:0] write_data;
 output wire	overflow;
@@ -100,11 +102,12 @@ alu	b2v_inst2(
 
 
 fetch_unit	b2v_inst3(
+	.f_clk(f_clk),
 	.start(start),
 	.branch(branch),
 	.taken(taken),
 	.pc_i(pc_i),
-	.start_addr(start_add),
+	.start_addr(start_addr),
 	.target(target),
 	.pc_o(pc_o));
 

@@ -8,11 +8,19 @@ module alu(
 );
 
 reg [7:0] alu_out;
+reg [8:0] sum;
+reg of;
 assign aluOut = alu_out;
+assign overflow = of;
+
 
 always_comb begin
 	case(opcode)
-		4'b0000:	alu_out = alu_rs1 + alu_rs2;		//add
+		4'b0000:	begin
+					sum = alu_rs1 + alu_rs2;
+					of = sum[8];
+					alu_out = sum[7:0];
+		end//add
 		4'b0001: alu_out = $signed(alu_rs1) + $signed(constant);//addi
 		4'b0010: alu_out = alu_rs1 - alu_rs2;		//sub
 		4'b0011: alu_out = alu_rs1<<constant; //shl 

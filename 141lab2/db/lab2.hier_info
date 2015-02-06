@@ -101,21 +101,21 @@ label_read => regB.OUTPUTSELECT
 label_read => regB.OUTPUTSELECT
 label_read => regB.OUTPUTSELECT
 label_read => regB.OUTPUTSELECT
-regA_o[0] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[1] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[2] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[3] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[4] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[5] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[6] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regA_o[7] << regA.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[0] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[1] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[2] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[3] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[4] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[5] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[6] << regB.DB_MAX_OUTPUT_PORT_TYPE
-regB_o[7] << regB.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[0] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[1] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[2] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[3] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[4] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[5] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[6] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regA_o[7] <= regA.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[0] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[1] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[2] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[3] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[4] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[5] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[6] <= regB.DB_MAX_OUTPUT_PORT_TYPE
+regB_o[7] <= regB.DB_MAX_OUTPUT_PORT_TYPE
 
 

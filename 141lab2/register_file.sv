@@ -29,9 +29,9 @@ always_comb begin
 end
 
 always_ff @(posedge clk) begin
-	if (reg_write != 0)
+	if (reg_write == 1)
 		general_registers[rd] <= write_data;
-	else if (label_write != 0)
+	else if (label_write == 1)
 		label_registers[rd] <= write_data;
 end
 endmodule

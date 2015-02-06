@@ -4,7 +4,7 @@ reg [7:0] address_i;
 wire[7:0] instruction_o;
 
 initial begin
-
+	address_i = 8'b0;
 	//TEST input address = 1
 	#10 address_i = 8'b1;
 	
