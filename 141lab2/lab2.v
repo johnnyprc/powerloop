@@ -15,106 +15,146 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
-// CREATED		"Thu Feb 05 22:51:02 2015"
+// CREATED		"Wed Feb 18 03:38:44 2015"
 
 module lab2(
-	clk,
-	reg_write,
-	label_write,
-	label_read,
-	start,
-	branch,
-	taken,
 	f_clk,
-	address_i,
-	alu_rs1,
-	alu_rs2,
-	constant,
-	opcode,
-	pc_i,
-	rd,
-	rs1,
-	rs2,
-	start_addr,
-	target,
-	write_data,
-	overflow,
-	aluOut,
-	instruction_o,
-	pc_o,
-	regA_o,
-	regB_o
+	start,
+	start_addr
 );
 
 
-input wire	clk;
-input wire	reg_write;
-input wire	label_write;
-input wire	label_read;
-input wire	start;
-input wire	branch;
-input wire	taken;
 input wire	f_clk;
-input wire	[7:0] address_i;
-input wire	[7:0] alu_rs1;
-input wire	[7:0] alu_rs2;
-input wire	[1:0] constant;
-input wire	[3:0] opcode;
-input wire	[7:0] pc_i;
-input wire	[2:0] rd;
-input wire	[2:0] rs1;
-input wire	[2:0] rs2;
+input wire	start;
 input wire	[7:0] start_addr;
-input wire	[7:0] target;
-input wire	[7:0] write_data;
-output wire	overflow;
-output wire	[7:0] aluOut;
-output wire	[7:0] instruction_o;
-output wire	[7:0] pc_o;
-output wire	[7:0] regA_o;
-output wire	[7:0] regB_o;
+
+wire	[7:0] SYNTHESIZED_WIRE_29;
+wire	SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_2;
+wire	[7:0] SYNTHESIZED_WIRE_30;
+wire	[7:0] SYNTHESIZED_WIRE_31;
+wire	[7:0] SYNTHESIZED_WIRE_32;
+wire	[1:0] SYNTHESIZED_WIRE_7;
+wire	[3:0] SYNTHESIZED_WIRE_8;
+wire	SYNTHESIZED_WIRE_9;
+wire	SYNTHESIZED_WIRE_33;
+wire	SYNTHESIZED_WIRE_13;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_34;
+wire	[3:0] SYNTHESIZED_WIRE_17;
+wire	[2:0] SYNTHESIZED_WIRE_18;
+wire	[2:0] SYNTHESIZED_WIRE_19;
+wire	[2:0] SYNTHESIZED_WIRE_20;
+wire	[7:0] SYNTHESIZED_WIRE_21;
+wire	[7:0] SYNTHESIZED_WIRE_23;
+wire	[7:0] SYNTHESIZED_WIRE_27;
+wire	[7:0] SYNTHESIZED_WIRE_28;
 
 
 
 
 
-
-register_file	b2v_inst(
-	.clk(clk),
-	.reg_write(reg_write),
-	.label_write(label_write),
-	.label_read(label_read),
-	.rd(rd),
-	.rs1(rs1),
-	.rs2(rs2),
-	.write_data(write_data),
-	.regA_o(regA_o),
-	.regB_o(regB_o));
+inst_rom	b2v_inst(
+	.address_i(SYNTHESIZED_WIRE_29),
+	.instruction_o(SYNTHESIZED_WIRE_28));
 
 
-alu	b2v_inst2(
-	.alu_rs1(alu_rs1),
-	.alu_rs2(alu_rs2),
-	.constant(constant),
-	.opcode(opcode),
-	.overflow(overflow),
-	.aluOut(aluOut));
-
-
-fetch_unit	b2v_inst3(
+fetch_unit	b2v_inst123455(
 	.f_clk(f_clk),
 	.start(start),
-	.branch(branch),
-	.taken(taken),
-	.pc_i(pc_i),
+	
+	.taken(SYNTHESIZED_WIRE_1),
+	.halt(SYNTHESIZED_WIRE_2),
+	.pc_i(SYNTHESIZED_WIRE_29),
 	.start_addr(start_addr),
-	.target(target),
-	.pc_o(pc_o));
+	.target(SYNTHESIZED_WIRE_30),
+	.pc_o(SYNTHESIZED_WIRE_29));
 
 
-inst_rom	b2v_inst4(
-	.address_i(address_i),
-	.instruction_o(instruction_o));
+alu	b2v_inst13(
+	.alu_rs1(SYNTHESIZED_WIRE_31),
+	.alu_rs2(SYNTHESIZED_WIRE_32),
+	.constant(SYNTHESIZED_WIRE_7),
+	.opcode(SYNTHESIZED_WIRE_8),
+	.overflow(SYNTHESIZED_WIRE_13),
+	.branch_taken_o(SYNTHESIZED_WIRE_1),
+	.aluOut(SYNTHESIZED_WIRE_30));
 
+
+single_port_ram_with_init	b2v_inst15(
+	.writemem(SYNTHESIZED_WIRE_9),
+	.readmem(SYNTHESIZED_WIRE_33),
+	.clk(f_clk),
+	.addr(SYNTHESIZED_WIRE_32),
+	.data(SYNTHESIZED_WIRE_31),
+	.q(SYNTHESIZED_WIRE_23));
+	defparam	b2v_inst15.ADDR_WIDTH = 8;
+
+
+register_file	b2v_inst16(
+	.clk(f_clk),
+	.condition_bit(SYNTHESIZED_WIRE_13),
+	.reg_write(SYNTHESIZED_WIRE_14),
+	.label_read(SYNTHESIZED_WIRE_15),
+	.label_write(SYNTHESIZED_WIRE_34),
+	.label_rs(SYNTHESIZED_WIRE_17),
+	.rd(SYNTHESIZED_WIRE_18),
+	.rs1(SYNTHESIZED_WIRE_19),
+	.rs2(SYNTHESIZED_WIRE_20),
+	.write_data(SYNTHESIZED_WIRE_21),
+	.regA_o(SYNTHESIZED_WIRE_31),
+	.regB_o(SYNTHESIZED_WIRE_32));
+
+
+mux_0	b2v_inst17(
+	.sel(SYNTHESIZED_WIRE_33),
+	.in1(SYNTHESIZED_WIRE_23),
+	.in2(SYNTHESIZED_WIRE_30),
+	.out(SYNTHESIZED_WIRE_27));
+
+
+mux_1	b2v_inst233(
+	.sel(SYNTHESIZED_WIRE_34),
+	.in1(SYNTHESIZED_WIRE_29),
+	.in2(SYNTHESIZED_WIRE_27),
+	.out(SYNTHESIZED_WIRE_21));
+
+
+decoder	b2v_inst7(
+	.instr(SYNTHESIZED_WIRE_28),
+	.memRead_o(SYNTHESIZED_WIRE_33),
+	.memWrite_o(SYNTHESIZED_WIRE_9),
+	.labelRead_o(SYNTHESIZED_WIRE_15),
+	.labelWrite_o(SYNTHESIZED_WIRE_34),
+	.regWrite_o(SYNTHESIZED_WIRE_14),
+	.halt_o(SYNTHESIZED_WIRE_2),
+	.alu_op_o(SYNTHESIZED_WIRE_8),
+	.branchAddr_o(SYNTHESIZED_WIRE_17),
+	.constant_o(SYNTHESIZED_WIRE_7),
+	.regDest_o(SYNTHESIZED_WIRE_18),
+	.regSource1_o(SYNTHESIZED_WIRE_19),
+	.regSource2_o(SYNTHESIZED_WIRE_20));
+
+
+endmodule
+
+module mux_0(sel,in1,in2,out);
+/* synthesis black_box */
+
+input sel;
+input [7:0] in1;
+input [7:0] in2;
+output [7:0] out;
+
+endmodule
+
+module mux_1(sel,in1,in2,out);
+/* synthesis black_box */
+
+input sel;
+input [7:0] in1;
+input [7:0] in2;
+output [7:0] out;
 
 endmodule

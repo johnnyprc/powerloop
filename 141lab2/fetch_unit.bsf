@@ -74,6 +74,13 @@ agreement for further details.
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
+		(pt 0 144)
+		(input)
+		(text "halt" (rect 0 0 12 12)(font "Arial" ))
+		(text "halt" (rect 21 139 33 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
 		(pt 200 32)
 		(output)
 		(text "pc_o[7..0]" (rect 0 0 40 12)(font "Arial" ))

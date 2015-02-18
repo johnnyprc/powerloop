@@ -14,87 +14,413 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2 {C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 23:50:23 on Feb 05,2015
+# Start time: 02:30:19 on Feb 18,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2" C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 23:50:23 on Feb 05,2015, Elapsed time: 0:00:00
+# End time: 02:30:19 on Feb 18,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2
 # reading C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini
-vlog -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv
+vsim work.totalTestbench
+# vsim -gui "+altera" -l msim_transcript -do "lab2_run_msim_rtl_verilog.do" 
+# Start time: 02:30:36 on Feb 18,2015
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.single_port_ram_with_init
+# Loading work.register_file
+# Loading work.mux_0
+# Loading work.mux
+# Loading work.mux_1
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+vsim work.totalTestbench
+# vsim 
+# Start time: 02:30:51 on Feb 18,2015
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.single_port_ram_with_init
+# Loading work.register_file
+# Loading work.mux_0
+# Loading work.mux
+# Loading work.mux_1
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 23:50:40 on Feb 05,2015
+# Start time: 02:31:16 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 02:31:16 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 02:31:16 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 02:31:16 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave  \
+sim:/totalTestbench/b2v_inst123455/f_clk \
+sim:/totalTestbench/b2v_inst123455/pc_next
+add wave  \
+{sim:/totalTestbench/b2v_inst16/general_registers[4]} \
+{sim:/totalTestbench/b2v_inst16/general_registers[3]} \
+{sim:/totalTestbench/b2v_inst16/general_registers[2]} \
+{sim:/totalTestbench/b2v_inst16/general_registers[1]} \
+{sim:/totalTestbench/b2v_inst16/general_registers[0]}
+add wave  \
+{sim:/totalTestbench/b2v_inst16/label_registers[0]}
+run
+add wave  \
+sim:/totalTestbench/b2v_inst/instruction_output
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 02:44:21 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 02:44:21 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+add wave  \
+sim:/totalTestbench/b2v_inst123455/target
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+add wave  \
+sim:/totalTestbench/b2v_inst16/regA_o
+add wave  \
+sim:/totalTestbench/b2v_inst16/label_read
+add wave  \
+sim:/totalTestbench/b2v_inst16/label_rs
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:10:35 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 03:10:35 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:21:10 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 03:21:10 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:21:10 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 03:21:10 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/alu_testbench.sv 
+# -- Compiling module alu_testbench
+# 
+# Top level modules:
+# 	alu_testbench
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/datamem.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/datamem.v 
+# -- Compiling module single_port_ram_with_init
+# 
+# Top level modules:
+# 	single_port_ram_with_init
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit.sv 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
-# ** Warning: (vlog-6) -- Waiting for lock by "johnnyprc@JOHNNYSPC, pid = 9220
-# ". Lockfile is "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/work/_lock".
-# 
 # -- Compiling module fetch_unit
 # 
 # Top level modules:
 # 	fetch_unit
-# End time: 23:51:20 on Feb 05,2015, Elapsed time: 0:00:40
-# Errors: 0, Warnings: 8
-vlog -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 23:51:28 on Feb 05,2015
+# Start time: 03:40:01 on Feb 18,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/fetch_unit_testbench.sv 
 # -- Compiling module fetch_unit_testbench
 # 
 # Top level modules:
 # 	fetch_unit_testbench
-# End time: 23:51:28 on Feb 05,2015, Elapsed time: 0:00:00
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.fetch_unit_testbench
-# vsim -gui "+altera" -l msim_transcript -do "lab2_run_msim_rtl_verilog.do" 
-# Start time: 23:51:37 on Feb 05,2015
-# Loading sv_std.std
-# Loading work.fetch_unit_testbench
-# Loading work.fetch_unit
-add wave  \
-sim:/fetch_unit_testbench/f_clk \
-sim:/fetch_unit_testbench/start \
-sim:/fetch_unit_testbench/start_addr \
-sim:/fetch_unit_testbench/target \
-sim:/fetch_unit_testbench/taken \
-sim:/fetch_unit_testbench/pc_o
-run
-add wave  \
-sim:/fetch_unit_testbench/b2v_inst3/pc
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/lab2.v 
+# -- Compiling module lab2
+# -- Compiling module mux_0
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	lab2
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux.sv 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux_0.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux_0.v 
+# -- Compiling module mux_0
+# 
+# Top level modules:
+# 	mux_0
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux_1.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/mux_1.v 
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	mux_1
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:01 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/rom_testbench.sv 
+# -- Compiling module rom_testbench
+# 
+# Top level modules:
+# 	rom_testbench
+# End time: 03:40:01 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:02 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 03:40:02 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 03:40:02 on Feb 18,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv 
+# -- Compiling module totalTestbench
+# 
+# Top level modules:
+# 	totalTestbench
+# End time: 03:40:02 on Feb 18,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart -f
 # Loading sv_std.std
-# Loading work.fetch_unit_testbench
+# Loading work.totalTestbench
+# Loading work.inst_rom
 # Loading work.fetch_unit
+# Loading work.alu
+# Loading work.single_port_ram_with_init
+# Loading work.register_file
+# Loading work.mux_0
+# Loading work.mux
+# Loading work.mux_1
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+run
 add wave  \
-sim:/fetch_unit_testbench/b2v_inst3/pc_next
+sim:/totalTestbench/b2v_inst16/regB_o
 restart -f
 # Loading sv_std.std
-# Loading work.fetch_unit_testbench
+# Loading work.totalTestbench
+# Loading work.inst_rom
 # Loading work.fetch_unit
+# Loading work.alu
+# Loading work.register_file
+# Loading work.mux
+# Loading work.decoder
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
 run
-# End time: 23:57:43 on Feb 05,2015, Elapsed time: 0:06:06
-# Errors: 0, Warnings: 0
+# End time: 04:00:11 on Feb 18,2015, Elapsed time: 1:29:20
+# Errors: 0, Warnings: 18
