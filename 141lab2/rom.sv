@@ -17,7 +17,7 @@ always_comb begin
 		8'b00000101: instruction_output = 8'b00010001;	// addi a0, 1	
 		8'b00000110: instruction_output = 8'b00010001;	// addi a0, 1
 		8'b00000111: instruction_output = 8'b00100100;	// ld a1, a0	
-		8'b00001000: instruction_output = 8'b00100100;	// fuck you tullsen
+		8'b00001000: instruction_output = 8'b00100100;	// nop
 		8'b00001001: instruction_output = 8'b01000111;	// shl, a1, 3
 		8'b00001010: instruction_output = 8'b01000101;	// shl, a1, 1
 		8'b00001011: instruction_output = 8'b11110000;	// OUTER_LOOOP
@@ -40,7 +40,7 @@ always_comb begin
 		8'b00011100: instruction_output = 8'b01000010;	// shl, a0, 2
 		8'b00011101: instruction_output = 8'b00000011;  // add a0, a3
 		8'b00011110: instruction_output = 8'b00101100;	// ld a3, a0
-		8'b00011111: instruction_output = 8'b00101100;	// fuck you tullsen
+		8'b00011111: instruction_output = 8'b00101100;	// nop
 		8'b00100000: instruction_output = 8'b11000000;	// clr a0
 		8'b00100001: instruction_output = 8'b00000011;  // add a0, a3
 		8'b00100010: instruction_output = 8'b11000011;  // clr a3
@@ -60,12 +60,12 @@ always_comb begin
 		8'b00110000: instruction_output = 8'b00101110;	// ld  a3, a2, a3 = x cuz mem[8] = x
 		8'b00110001: instruction_output = 8'b10100010;	// popv a2
 		8'b00110010: instruction_output = 8'b00011101;	// addi a3, 1
-		8'b00110011: instruction_output = 8'b00011101;	// addi a3, 1(should be jmp outerloop)
+		8'b00110011: instruction_output = 8'b01110000;	// jmp outerloop
 		8'b00110100: instruction_output = 8'b11110011;	// NOT_EQUAL
 		8'b00110101: instruction_output = 8'b00011111;	// addi a3, -1
 		8'b00110110: instruction_output = 8'b01000001;	// shl a0, 1
 		8'b00110111: instruction_output = 8'b01000001;	// shl a0, 1(should be jmp innterloop)
-		8'b00111000: instruction_output = 8'b11111000;	// EXIT
+		8'b00111000: instruction_output = 8'b11110100;	// EXIT
 		8'b00111001: instruction_output = 8'b11000000;  // clr a0
 		8'b00111010: instruction_output = 8'b00010001;  // addi a0, 1
 		8'b00111011: instruction_output = 8'b01000011;  // shl a0, 3

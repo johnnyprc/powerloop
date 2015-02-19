@@ -15,7 +15,7 @@ module single_port_ram_with_init
 	reg [7:0] ram[2**ADDR_WIDTH-1:0];
 
 	// Variable to hold the registered read address
-	reg [ADDR_WIDTH-1:0] addr_reg;  
+	reg [ADDR_WIDTH-1:0] addr_reg;
 
 	initial 
 	begin
@@ -118,15 +118,12 @@ module single_port_ram_with_init
 		// Write
 		if (writemem)
 			ram[addr] <= data;
-		else if (readmem)
-			addr_reg <= addr;
-		else
-			addr_reg <= 8'bxxxxxxxx;
 	end
 
+	
 	// Continuous assignment implies read returns NEW data.
 	// This is the natural behavior of the TriMatrix memory
 	// blocks in Single Port mode.  
-	assign q = ram[addr_reg];
+	assign q = (readmem)? ram[addr] : 8'bxxxxxxxx;
 
 endmodule

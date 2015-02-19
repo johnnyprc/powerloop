@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/johnn_000/Desktop/powerloop/141lab2/simulation/modelsim
 vregister_file
 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-!s110 1424299644
+!s110 1424325481
 !i10b 1
-!s100 Kg;U2_j?a`A`>]X7XdUE10
-IFSlMR]Kl>MNMoZ?KbbibD0
+!s100 L7Qa=?Q8kZSEk3Q`[ijGM1
+I00K;bDj>=3a@J3[kQ9C5d1
 V`JN@9S9cnhjKRR_L]QIcM3
 !s105 register_file_sv_unit
 S1
 R0
-w1424299589
+w1424325068
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
 L0 1
@@ -26,7 +26,7 @@ OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1424299644.377000
+!s108 1424325481.892000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johnn_000/Desktop/powerloop/141lab2|C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv|
 !i113 1
