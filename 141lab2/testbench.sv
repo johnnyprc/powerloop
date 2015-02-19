@@ -14,7 +14,7 @@ wire [7:0] regB_o;
 
 // Initialize all variables
 initial begin        
-	clk = 1;       // initial value of clock
+	clk = 0;       // initial value of clock
 	reg_write = 0;  	// initial value of reg_write
 	label_write = 1;     // initial value of label_write
 	label_read = 0;     // initial value of lable_read

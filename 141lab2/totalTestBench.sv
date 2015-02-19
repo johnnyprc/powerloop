@@ -11,7 +11,7 @@ initial begin
 	start_addr = 8'b00000000;
 	f_clk = 0;
 
-	#10 start = 0;
+	#15 start = 0;
 
 end
 

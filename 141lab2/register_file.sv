@@ -22,7 +22,7 @@ assign regB_o = regB;
 
 always_comb begin
 	if (label_read == 1) begin
-		regA = label_registers[label_rs];
+		regA = general_registers[label_rs]; //should be v0
 		regB = label_registers[label_rs];
 	end
 	else begin
