@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab2
-Tue Feb 17 22:45:36 2015
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Wed Feb 18 21:38:23 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -16,44 +16,42 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 17 22:45:36 2015      ;
-; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 18 21:38:23 2015      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; lab2                                       ;
 ; Top-level Entity Name              ; register_file                              ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 204                                        ;
-;     Total combinational functions  ; 116                                        ;
-;     Dedicated logic registers      ; 89                                         ;
-; Total registers                    ; 89                                         ;
+; Total logic elements               ; 229                                        ;
+;     Total combinational functions  ; 133                                        ;
+;     Dedicated logic registers      ; 97                                         ;
+; Total registers                    ; 97                                         ;
 ; Total pins                         ; 42                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -129,7 +127,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -149,24 +147,30 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; register_file.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/register_file.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
+; register_file.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/register_file.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -174,30 +178,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 204       ;
+; Estimated Total logic elements              ; 229       ;
 ;                                             ;           ;
-; Total combinational functions               ; 116       ;
+; Total combinational functions               ; 133       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 89        ;
-;     -- 3 input functions                    ; 23        ;
-;     -- <=2 input functions                  ; 4         ;
+;     -- 4 input functions                    ; 102       ;
+;     -- 3 input functions                    ; 24        ;
+;     -- <=2 input functions                  ; 7         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 116       ;
+;     -- normal mode                          ; 133       ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 89        ;
-;     -- Dedicated logic registers            ; 89        ;
+; Total registers                             ; 97        ;
+;     -- Dedicated logic registers            ; 97        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 42        ;
-;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 89        ;
-; Total fan-out                               ; 757       ;
-; Average fan-out                             ; 2.62      ;
+; Maximum fan-out                             ; 97        ;
+; Total fan-out                               ; 842       ;
+; Average fan-out                             ; 2.68      ;
 +---------------------------------------------+-----------+
 
 
@@ -206,7 +208,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |register_file             ; 116 (116)         ; 89 (89)      ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |register_file      ; work         ;
+; |register_file             ; 133 (133)         ; 97 (97)      ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |register_file      ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,12 +234,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 89    ;
+; Total registers                              ; 97    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 88    ;
+; Number of registers using Clock Enable       ; 96    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -247,29 +249,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 9:1                ; 7 bits    ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |register_file|regA        ;
-; 9:1                ; 7 bits    ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |register_file|regB        ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; No         ; |register_file|regB        ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 28 LEs               ; 42 LEs                 ; No         ; |register_file|regA        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 42                          ;
-; cycloneiii_ff         ; 89                          ;
-;     ENA               ; 88                          ;
-;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 116                         ;
-;     normal            ; 116                         ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 89                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.94                        ;
-+-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -286,10 +268,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Tue Feb 17 22:45:23 2015
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Wed Feb 18 21:38:20 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2 -c lab2
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
     Info (12023): Found entity 1: register_file
 Info (12021): Found 1 design units, including 1 entities, in source file lab2.bdf
@@ -315,10 +297,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux.sv
     Info (12023): Found entity 1: mux
 Info (12021): Found 1 design units, including 1 entities, in source file datamem.v
     Info (12023): Found entity 1: single_port_ram_with_init
-Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(27): created implicit net for "SYNTHESIZED_WIRE_0"
-Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(28): created implicit net for "SYNTHESIZED_WIRE_1"
-Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(29): created implicit net for "SYNTHESIZED_WIRE_29"
-Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(31): created implicit net for "SYNTHESIZED_WIRE_30"
+Info (12021): Found 1 design units, including 1 entities, in source file totaltestbench.sv
+    Info (12023): Found entity 1: totalTestbench
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(31): created implicit net for "SYNTHESIZED_WIRE_0"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(32): created implicit net for "SYNTHESIZED_WIRE_1"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(33): created implicit net for "SYNTHESIZED_WIRE_29"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(35): created implicit net for "SYNTHESIZED_WIRE_30"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(41): created implicit net for "SYNTHESIZED_WIRE_31"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(42): created implicit net for "SYNTHESIZED_WIRE_6"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(43): created implicit net for "SYNTHESIZED_WIRE_7"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(44): created implicit net for "SYNTHESIZED_WIRE_12"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(46): created implicit net for "SYNTHESIZED_WIRE_23"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(50): created implicit net for "SYNTHESIZED_WIRE_8"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(51): created implicit net for "SYNTHESIZED_WIRE_32"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(55): created implicit net for "SYNTHESIZED_WIRE_22"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(62): created implicit net for "SYNTHESIZED_WIRE_13"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(63): created implicit net for "SYNTHESIZED_WIRE_14"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(64): created implicit net for "SYNTHESIZED_WIRE_33"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(65): created implicit net for "SYNTHESIZED_WIRE_16"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(66): created implicit net for "SYNTHESIZED_WIRE_17"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(67): created implicit net for "SYNTHESIZED_WIRE_18"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(68): created implicit net for "SYNTHESIZED_WIRE_19"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(69): created implicit net for "SYNTHESIZED_WIRE_20"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(78): created implicit net for "SYNTHESIZED_WIRE_27"
+Warning (10236): Verilog HDL Implicit Net warning at fetch_unit_testbench.sv(83): created implicit net for "SYNTHESIZED_WIRE_28"
 Warning (10236): Verilog HDL Implicit Net warning at decoder.sv(37): created implicit net for "memwrite_o"
 Info (12127): Elaborating entity "register_file" for the top level hierarchy
 Info (276014): Found 1 instances of uninferred RAM logic
@@ -328,14 +330,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "label_rs[3]"
-Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 271 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 204 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 614 megabytes
-    Info: Processing ended: Tue Feb 17 22:45:36 2015
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 229 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 450 megabytes
+    Info: Processing ended: Wed Feb 18 21:38:23 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -46,22 +46,32 @@ always_comb begin
 		8'b00100010: instruction_output = 8'b11000011;  // clr a3
 		8'b00100011: instruction_output = 8'b00011101;	// addi a3, 1;
 		8'b00100100: instruction_output = 8'b01001110;	// shl, a3, 2
-		8'b00100101: instruction_output = 8'b10010011;	// pushv a3
-		8'b00100110: instruction_output = 8'b01100000;	// beq0 end_innter (incorrect label)
-		8'b00100111: instruction_output = 8'b11010001;	// cmp4 a0, a1
-		8'b00101000: instruction_output = 8'b01100000;	// beq0 not_equal (incorrect label)
-		8'b00101001: instruction_output = 8'b00011001;	// addi a2, 1
-		8'b00101010: instruction_output = 8'b10010010;	// pushv a2
-		8'b00101011: instruction_output = 8'b11000010;	// clr a2
-		8'b00101100: instruction_output = 8'b00011001;	// addi a2, 1
-		8'b00101101: instruction_output = 8'b01001011;	// shl a2, 3
-		8'b00101110: instruction_output = 8'b00101110;	// ld  a3, a2, a3 = x cuz mem[8] = x
-		8'b00101111: instruction_output = 8'b10100010;	// popv a2
-		8'b00110000: instruction_output = 8'b00011101;	// addi a3, 1
-		8'b00110001: instruction_output = 8'b00011101;	// addi a3, 1(should be jmp outerloop)
-		8'b00110010: instruction_output = 8'b00011111;	// addi a3, -1
-		8'b00110011: instruction_output = 8'b01000001;	// shl a0, 1
-		8'b00110100: instruction_output = 8'b01000001;	// shl a0, 1(should be jmp innterloop)
+		8'b00100101: instruction_output = 8'b11110001;	// INNERLOOP
+		8'b00100110: instruction_output = 8'b10010011;	// pushv a3
+		8'b00100111: instruction_output = 8'b01100000;	// beq0 end_innter (incorrect label)
+		8'b00101000: instruction_output = 8'b11010001;	// cmp4 a0, a1
+		8'b00101001: instruction_output = 8'b01100000;	// beq0 not_equal (incorrect label)
+		8'b00101010: instruction_output = 8'b00011001;	// addi a2, 1
+		8'b00101011: instruction_output = 8'b11110010;	// END_INNER
+		8'b00101100: instruction_output = 8'b10010010;	// pushv a2
+		8'b00101101: instruction_output = 8'b11000010;	// clr a2
+		8'b00101110: instruction_output = 8'b00011001;	// addi a2, 1
+		8'b00101111: instruction_output = 8'b01001011;	// shl a2, 3
+		8'b00110000: instruction_output = 8'b00101110;	// ld  a3, a2, a3 = x cuz mem[8] = x
+		8'b00110001: instruction_output = 8'b10100010;	// popv a2
+		8'b00110010: instruction_output = 8'b00011101;	// addi a3, 1
+		8'b00110011: instruction_output = 8'b00011101;	// addi a3, 1(should be jmp outerloop)
+		8'b00110100: instruction_output = 8'b11110011;	// NOT_EQUAL
+		8'b00110101: instruction_output = 8'b00011111;	// addi a3, -1
+		8'b00110110: instruction_output = 8'b01000001;	// shl a0, 1
+		8'b00110111: instruction_output = 8'b01000001;	// shl a0, 1(should be jmp innterloop)
+		8'b00111000: instruction_output = 8'b11111000;	// EXIT
+		8'b00111001: instruction_output = 8'b11000000;  // clr a0
+		8'b00111010: instruction_output = 8'b00010001;  // addi a0, 1
+		8'b00111011: instruction_output = 8'b01000011;  // shl a0, 3
+		8'b00111100: instruction_output = 8'b00010011;  // addi a0, -1
+		8'b00111101: instruction_output = 8'b01111000;  // st a2, a0
+		8'b00111110: instruction_output = 8'b11100000;  // halt
 		default: instruction_output = 8'b11111111;
 	endcase
 end

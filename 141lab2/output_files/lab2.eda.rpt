@@ -1,6 +1,6 @@
 EDA Netlist Writer report for lab2
-Tue Feb 17 22:46:15 2015
-Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+Wed Feb 18 21:38:58 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -17,27 +17,26 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Feb 17 22:46:15 2015 ;
+; EDA Netlist Writer Status ; Successful - Wed Feb 18 21:38:58 2015 ;
 ; Revision Name             ; lab2                                  ;
 ; Top-level Entity Name     ; register_file                         ;
 ; Family                    ; Cyclone IV E                          ;
@@ -67,20 +66,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_85c_slow.svo    ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_0c_slow.svo     ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_min_1200mv_0c_fast.svo   ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2.svo                      ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_85c_v_slow.sdo  ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_0c_v_slow.sdo   ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/lab2_v.sdo                    ;
-+-----------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                      ;
++-------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                 ;
++-------------------------------------------------------------------------------------------------+
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_85c_slow.svo    ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_0c_slow.svo     ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_min_1200mv_0c_fast.svo   ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2.svo                      ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/lab2_v.sdo                    ;
++-------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +87,20 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Tue Feb 17 22:46:14 2015
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Wed Feb 18 21:38:57 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab2 -c lab2
-Info (204019): Generated file lab2_7_1200mv_85c_slow.svo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_7_1200mv_0c_slow.svo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_min_1200mv_0c_fast.svo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2.svo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_7_1200mv_85c_v_slow.sdo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_7_1200mv_0c_v_slow.sdo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_min_1200mv_0c_v_fast.sdo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab2_v.sdo in folder "C:/Users/johnn_000/Dropbox/Lab2/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_7_1200mv_85c_slow.svo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_7_1200mv_0c_slow.svo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_min_1200mv_0c_fast.svo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2.svo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_7_1200mv_85c_v_slow.sdo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_7_1200mv_0c_v_slow.sdo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab2_v.sdo in folder "C:/Users/Kesav/Desktop/141L/powerloop/141lab2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 533 megabytes
-    Info: Processing ended: Tue Feb 17 22:46:15 2015
+    Info: Peak virtual memory: 407 megabytes
+    Info: Processing ended: Wed Feb 18 21:38:58 2015
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
