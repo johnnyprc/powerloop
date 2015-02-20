@@ -11,11 +11,14 @@ module fetch_unit(
 );
 
 reg [7:0] pc, pc_next;
+reg [32:0] cycleCounter;
 assign pc_o = pc_next;
 
 always_ff @(posedge f_clk) begin
-	if (start == 1)
+	if (start == 1) begin
 		pc_next = start_addr;
+		cycleCounter = 0;
+	end
 	else if (halt == 0) begin
 		if (taken == 1)
 			pc <= target;
@@ -26,6 +29,8 @@ always_ff @(posedge f_clk) begin
 			pc_next <= start_addr;
 		else
 			pc_next <= pc + 1;
+		
+		cycleCounter = cycleCounter + 1;
 	end
 end
 

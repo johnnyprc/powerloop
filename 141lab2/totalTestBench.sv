@@ -9,6 +9,7 @@ module totalTestbench();
 initial begin
 	start = 1;
 	start_addr = 8'b00000000;
+	//start_addr = 8'b01000000;
 	f_clk = 0;
 
 	#15 start = 0;

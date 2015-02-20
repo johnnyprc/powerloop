@@ -92,6 +92,18 @@ task label_addr;
 					8'b100: label_address = 8'b00111000;
 				endcase
 			end
+			8'b01000000: begin
+				case(label_num)
+					8'b0:  label_address = 8'b01001010; //loop1
+					8'b1:  label_address = 8'b01010010; //st_loop2
+					8'b10:  label_address = 8'b01011111; //lowBitL
+					8'b11:  label_address = 8'b01100110; //st_HBL
+					8'b100:  label_address = 8'b01101110; //HBLO
+					8'b101:  label_address = 8'b01111000; //HBLI
+					8'b110:  label_address = 8'b01111111; //EndInner
+					8'b111:  label_address = 8'b10000011; //exit
+				endcase
+			end
 			default:
 					label_address = 8'bxxxxxxxx;
 		endcase
