@@ -9,6 +9,7 @@ module register_file(
 	input label_read,
 	input label_write,
 	input [3:0] label_rs,
+	input branch_i,
 	output [7:0] regA_o,
 	output [7:0] regB_o
 );
@@ -22,8 +23,11 @@ assign regB_o = regB;
 
 always_comb begin
 	if (label_read == 1) begin
-		regA = general_registers[label_rs]; //should be v0
-		regB = label_registers[label_rs];
+		regA = label_rs;
+		if (branch_i == 1)
+			regB = general_registers[4]; //should be v0
+		else
+			regB = label_rs;
 	end
 	else begin
 		regA = general_registers[rs1];

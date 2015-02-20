@@ -14,80 +14,106 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/johnn_000/Desktop/powerloop/141lab2 {C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:01 on Feb 18,2015
+# Start time: 19:06:30 on Feb 19,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johnn_000/Desktop/powerloop/141lab2" C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 21:58:01 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:06:30 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 cd C:/Users/johnn_000/Desktop/powerloop/141lab2
 # reading C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini
+vsim +altera -do lab2_run_msim_rtl_verilog.do -l msim_transcript -gui work.totalTestbench
+# vsim -gui "+altera" -l msim_transcript -do "lab2_run_msim_rtl_verilog.do" 
+# Start time: 19:06:53 on Feb 19,2015
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.single_port_ram_with_init
+# Loading work.mux_0
+# Loading work.mux
+# Loading work.register_file
+# Loading work.mux_1
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+# lab2_run_msim_rtl_verilog.do
+# invalid command name "lab2_run_msim_rtl_verilog.do"
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:06 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:06 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:06 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv 
 # -- Compiling module alu_testbench
 # 
 # Top level modules:
 # 	alu_testbench
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v 
 # -- Compiling module single_port_ram_with_init
 # 
 # Top level modules:
 # 	single_port_ram_with_init
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv 
 # -- Compiling module fetch_unit
 # 
 # Top level modules:
 # 	fetch_unit
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv 
 # -- Compiling module fetch_unit_testbench
 # 
 # Top level modules:
 # 	fetch_unit_testbench
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v 
 # -- Compiling module lab2
 # -- Compiling module mux_0
@@ -95,234 +121,445 @@ vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2
 # 
 # Top level modules:
 # 	lab2
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv 
 # -- Compiling module mux
 # 
 # Top level modules:
 # 	mux
-# End time: 21:58:16 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:16 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v 
 # -- Compiling module mux_0
 # 
 # Top level modules:
 # 	mux_0
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:01
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v 
 # -- Compiling module mux_1
 # 
 # Top level modules:
 # 	mux_1
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
 # -- Compiling module inst_rom
 # 
 # Top level modules:
 # 	inst_rom
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv 
 # -- Compiling module rom_testbench
 # 
 # Top level modules:
 # 	rom_testbench
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 21:58:17 on Feb 18,2015
+# Start time: 19:07:07 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv 
 # -- Compiling module totalTestbench
 # 
 # Top level modules:
 # 	totalTestbench
-# End time: 21:58:17 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:07:07 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.totalTestbench
-# vsim -gui "+altera" -l msim_transcript -do "lab2_run_msim_rtl_verilog.do" 
-# Start time: 21:58:23 on Feb 18,2015
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.single_port_ram_with_init
-# Loading work.register_file
-# Loading work.mux_0
-# Loading work.mux
-# Loading work.mux_1
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
-# 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
-# 
-vsim work.totalTestbench
-# vsim 
-# Start time: 21:58:25 on Feb 18,2015
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.single_port_ram_with_init
-# Loading work.register_file
-# Loading work.mux_0
-# Loading work.mux
-# Loading work.mux_1
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
-# 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
-# 
+add wave  \
+sim:/totalTestbench/b2v_inst6/another_mem_o
 add wave  \
 sim:/totalTestbench/b2v_inst123455/f_clk \
 sim:/totalTestbench/b2v_inst123455/pc_next
 add wave  \
-sim:/totalTestbench/b2v_inst16/regA_o \
-{sim:/totalTestbench/b2v_inst16/general_registers[4]} \
-{sim:/totalTestbench/b2v_inst16/general_registers[3]} \
-{sim:/totalTestbench/b2v_inst16/general_registers[2]} \
-{sim:/totalTestbench/b2v_inst16/general_registers[1]} \
-{sim:/totalTestbench/b2v_inst16/general_registers[0]} \
-{sim:/totalTestbench/b2v_inst16/label_registers[0]}
-run
-restart -f
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
-# Loading work.mux
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
-# 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
-# 
-run
+{sim:/totalTestbench/b2v_inst2/general_registers[2]} \
+{sim:/totalTestbench/b2v_inst2/general_registers[0]}
 add wave  \
-sim:/totalTestbench/b2v_inst/instruction_o
-restart -f
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
-# Loading work.mux
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
-# 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
-# 
-run
+sim:/totalTestbench/b2v_inst/instruction_output
 add wave  \
-{sim:/totalTestbench/b2v_inst16/label_registers[4]} \
-{sim:/totalTestbench/b2v_inst16/label_registers[3]} \
-{sim:/totalTestbench/b2v_inst16/label_registers[2]} \
-{sim:/totalTestbench/b2v_inst16/label_registers[1]}
-restart -f
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
-# Loading work.mux
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
-# 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
-# 
+{sim:/totalTestbench/b2v_inst15/ram[0]}
 run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:11:15 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:11:15 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 22:09:39 on Feb 18,2015
+# Start time: 19:11:15 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
 # -- Compiling module inst_rom
 # 
 # Top level modules:
 # 	inst_rom
-# End time: 22:09:39 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 19:11:15 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart -f
 # Loading sv_std.std
 # Loading work.totalTestbench
 # Loading work.inst_rom
 # Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
+# Loading work.single_port_ram_with_init
+# Loading work.mux_0
 # Loading work.mux
+# Loading work.register_file
+# Loading work.mux_1
 # Loading work.decoder
+# Loading work.alu
 # ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
 # 
 #         Region: /totalTestbench/b2v_inst123455
 # ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
 # 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
 run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:12:17 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 19:12:17 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 add wave  \
+{sim:/totalTestbench/b2v_inst15/ram[8]} \
 {sim:/totalTestbench/b2v_inst15/ram[7]}
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:13:02 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 19:13:02 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart -f
 # Loading sv_std.std
 # Loading work.totalTestbench
 # Loading work.inst_rom
 # Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
 # Loading work.mux
+# Loading work.register_file
 # Loading work.decoder
+# Loading work.alu
 # ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
 # 
 #         Region: /totalTestbench/b2v_inst123455
 # ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
 # 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 19:16:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 19:16:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
 run
 add wave  \
-sim:/totalTestbench/b2v_inst7/memWrite_o
+{sim:/totalTestbench/b2v_inst2/general_registers[0]}
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+add wave  \
+{sim:/totalTestbench/b2v_inst2/general_registers[3]}
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+add wave  \
+{sim:/totalTestbench/b2v_inst2/general_registers[5]}
+add wave  \
+{sim:/totalTestbench/b2v_inst2/general_registers[4]}
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:58:17 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 20:58:17 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:13:02 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 21:13:02 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
 add wave  \
 sim:/totalTestbench/b2v_inst15/writemem
 restart -f
@@ -330,76 +567,8382 @@ restart -f
 # Loading work.totalTestbench
 # Loading work.inst_rom
 # Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
 # Loading work.mux
+# Loading work.register_file
 # Loading work.decoder
+# Loading work.alu
 # ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
 # 
 #         Region: /totalTestbench/b2v_inst123455
 # ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
 # 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
 run
 add wave  \
-sim:/totalTestbench/b2v_inst13/taken
-add wave  \
-sim:/totalTestbench/b2v_inst13/alu_out
+sim:/totalTestbench/b2v_inst6/another_mem_o
 restart -f
 # Loading sv_std.std
 # Loading work.totalTestbench
 # Loading work.inst_rom
 # Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
 # Loading work.mux
+# Loading work.register_file
 # Loading work.decoder
+# Loading work.alu
 # ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
 # 
 #         Region: /totalTestbench/b2v_inst123455
 # ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
 # 
-run
-add wave  \
-sim:/totalTestbench/b2v_inst13/opcode
-restart -f
-# Loading sv_std.std
-# Loading work.totalTestbench
-# Loading work.inst_rom
-# Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
-# Loading work.mux
-# Loading work.decoder
-# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
 # 
-#         Region: /totalTestbench/b2v_inst123455
-# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
 # 
 run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 21:27:59 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv 
+# -- Compiling module alu_testbench
+# 
+# Top level modules:
+# 	alu_testbench
+# End time: 21:27:59 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v 
+# -- Compiling module single_port_ram_with_init
+# 
+# Top level modules:
+# 	single_port_ram_with_init
+# End time: 21:27:59 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 21:27:59 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv 
+# -- Compiling module fetch_unit
+# 
+# Top level modules:
+# 	fetch_unit
+# End time: 21:27:59 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:27:59 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv 
+# -- Compiling module fetch_unit_testbench
+# 
+# Top level modules:
+# 	fetch_unit_testbench
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v 
+# -- Compiling module lab2
+# -- Compiling module mux_0
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	lab2
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v 
+# -- Compiling module mux_0
+# 
+# Top level modules:
+# 	mux_0
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v 
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	mux_1
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 23:01:33 on Feb 18,2015
+# Start time: 21:28:00 on Feb 19,2015
 # vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
 # -- Compiling module inst_rom
 # 
 # Top level modules:
 # 	inst_rom
-# End time: 23:01:33 on Feb 18,2015, Elapsed time: 0:00:00
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv 
+# -- Compiling module rom_testbench
+# 
+# Top level modules:
+# 	rom_testbench
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:28:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv 
+# -- Compiling module totalTestbench
+# 
+# Top level modules:
+# 	totalTestbench
+# End time: 21:28:00 on Feb 19,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart -f
 # Loading sv_std.std
 # Loading work.totalTestbench
 # Loading work.inst_rom
 # Loading work.fetch_unit
-# Loading work.alu
-# Loading work.register_file
+# Loading work.single_port_ram_with_init
+# Loading work.mux_0
 # Loading work.mux
+# Loading work.register_file
+# Loading work.mux_1
 # Loading work.decoder
+# Loading work.alu
 # ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
 # 
 #         Region: /totalTestbench/b2v_inst123455
 # ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
 # 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
 run
-# End time: 23:22:43 on Feb 18,2015, Elapsed time: 1:24:18
-# Errors: 0, Warnings: 20
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+# WARNING: No extended dataflow license exists
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:37:12 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 21:37:12 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:38:54 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv 
+# -- Compiling module fetch_unit
+# 
+# Top level modules:
+# 	fetch_unit
+# End time: 21:38:54 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:40:25 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# ** Error: C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv(54): near ")": syntax error, unexpected ')', expecting *) or ';' or ','
+# End time: 21:40:25 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:57 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 21:42:57 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:57 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv 
+# -- Compiling module alu_testbench
+# 
+# Top level modules:
+# 	alu_testbench
+# End time: 21:42:57 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v 
+# -- Compiling module single_port_ram_with_init
+# 
+# Top level modules:
+# 	single_port_ram_with_init
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv 
+# -- Compiling module fetch_unit
+# 
+# Top level modules:
+# 	fetch_unit
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv 
+# -- Compiling module fetch_unit_testbench
+# 
+# Top level modules:
+# 	fetch_unit_testbench
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v 
+# -- Compiling module lab2
+# -- Compiling module mux_0
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	lab2
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v 
+# -- Compiling module mux_0
+# 
+# Top level modules:
+# 	mux_0
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v 
+# -- Compiling module mux_1
+# 
+# Top level modules:
+# 	mux_1
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv 
+# -- Compiling module inst_rom
+# 
+# Top level modules:
+# 	inst_rom
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv 
+# -- Compiling module rom_testbench
+# 
+# Top level modules:
+# 	rom_testbench
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:42:58 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv 
+# -- Compiling module totalTestbench
+# 
+# Top level modules:
+# 	totalTestbench
+# End time: 21:42:58 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.single_port_ram_with_init
+# Loading work.mux_0
+# Loading work.mux
+# Loading work.register_file
+# Loading work.mux_1
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 21:45:00 on Feb 19,2015
+# vlog -reportprogress 300 -work work C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 21:45:00 on Feb 19,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
+add wave  \
+sim:/totalTestbench/b2v_inst123455/halt
+add wave  \
+{sim:/totalTestbench/b2v_inst2/general_registers[1]}
+add wave  \
+sim:/totalTestbench/b2v_inst7/alu_rs1 \
+sim:/totalTestbench/b2v_inst7/alu_rs2
+add wave  \
+sim:/totalTestbench/b2v_inst6/halt
+restart -f
+# Loading sv_std.std
+# Loading work.totalTestbench
+# Loading work.inst_rom
+# Loading work.fetch_unit
+# Loading work.mux
+# Loading work.register_file
+# Loading work.decoder
+# Loading work.alu
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /totalTestbench/b2v_inst123455
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(55): [TFMPC] - Missing connection for port 'branch'.
+# 
+# ** Warning: (vsim-3017) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Too few port connections. Expected 15, found 14.
+# 
+#         Region: /totalTestbench/b2v_inst6
+# ** Warning: (vsim-3722) C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv(107): [TFMPC] - Missing connection for port 'memWrite_o'.
+# 
+run
+#   0
+#  64
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   1
+#  63
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   2
+#  62
+#   4
+#   4
+#  80
+#   1
+#   3
+#  61
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   4
+#  60
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   5
+#  59
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   6
+#  58
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   7
+#  57
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   8
+#  56
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#   9
+#  55
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  10
+#  54
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  11
+#  53
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  12
+#  52
+#   4
+#   4
+#  80
+#   1
+#  13
+#  51
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  14
+#  50
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  15
+#  49
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  16
+#  48
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  17
+#  47
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  18
+#  46
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  19
+#  45
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  20
+#  44
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  21
+#  43
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  22
+#  42
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  23
+#  41
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  24
+#  40
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  25
+#  39
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  26
+#  38
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  27
+#  37
+#   4
+#   4
+#  80
+#   1
+#  28
+#  36
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  29
+#  35
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  30
+#  34
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  31
+#  33
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  32
+#  32
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  33
+#  31
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  34
+#  30
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  35
+#  29
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  36
+#  28
+#   4
+#   4
+#  80
+#   1
+#  37
+#  27
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  38
+#  26
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  39
+#  25
+#   4
+#   4
+#  80
+#   1
+#  40
+#  24
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  41
+#  23
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  42
+#  22
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  43
+#  21
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  44
+#  20
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  45
+#  19
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  46
+#  18
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  47
+#  17
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  48
+#  16
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   1
+#  49
+#  15
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  50
+#  14
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  51
+#  13
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   1
+#  52
+#  12
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   1
+#  53
+#  11
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  54
+#  10
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  55
+#   9
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  56
+#   8
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  57
+#   7
+#   4
+#   4
+#  80
+#   1
+#  58
+#   6
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  59
+#   5
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  60
+#   4
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  61
+#   3
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  62
+#   2
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  63
+#   1
+#   4
+#   4
+#  80
+#   0
+#  80
+#   3
+#  80
+#   0
+#  80
+#   2
+#  80
+#   0
+#  80
+#   1
+#  80
+#   0
+#  80
+#   0
+#  64
+#   0
