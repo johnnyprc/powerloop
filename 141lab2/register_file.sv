@@ -7,7 +7,6 @@ module register_file(
 	input condition_bit,
 	input reg_write,
 	input label_read,
-	input label_write,
 	input [3:0] label_rs,
 	input branch_i,
 	output [7:0] regA_o,
@@ -16,7 +15,6 @@ module register_file(
 
 reg [7:0] regA, regB;
 reg [7:0] general_registers[6:0]; // a0- a3, v0, c0, zero
-reg [7:0] label_registers[5:0]; // l0 - l5
 
 assign regA_o = regA;
 assign regB_o = regB;
@@ -40,7 +38,5 @@ always_ff @(negedge clk) begin
 		general_registers[rd] <= write_data;
 		general_registers[5] <= condition_bit;
 	end
-	else if (label_write == 1)
-		label_registers[rd] <= write_data;
 end
 endmodule

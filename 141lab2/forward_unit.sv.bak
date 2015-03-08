@@ -1,0 +1,10 @@
+module forward_Unit(
+	input [2:0] rs,
+	input [2:0] rd,
+	output reg enable
+);
+always begin
+	enable = (rs == rd);
+end
+
+endmodule

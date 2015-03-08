@@ -14,25 +14,25 @@ reg [7:0] pc, pc_next;
 reg [32:0] cycleCounter;
 assign pc_o = pc_next;
 
-always_ff @(posedge f_clk) begin
+always_comb begin
 	if (start == 1) begin
 		pc_next = start_addr;
 		cycleCounter = 0;
 	end
 	else if (halt == 0) begin
 		if (taken == 1)
-			pc <= target;
+			pc_next = target;
+		else if (start == 1)
+			pc_next = start_addr;
 		else
-			pc <= pc_next;
-		
-		if (start == 1)
-			pc_next <= start_addr;
-		else
-			pc_next <= pc + 1;
+			pc_next = pc + 1;
 		
 		cycleCounter = cycleCounter + 1;
 	end
 end
+
+always_ff @(posedge f_clk)
+	pc <= pc_next;	
 
 
 endmodule

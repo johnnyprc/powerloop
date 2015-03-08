@@ -43,8 +43,7 @@ always_comb begin
 					end
 		4'b0101: begin
 					label_addr(startAddr_i, alu_rs1, alu_out);
-					taken = (alu_rs2 == 0);		//eq0
-					$display(alu_rs2);
+					taken = (alu_rs2 == 0);		//beq0
 					end
 		4'b0110: begin
 					alu_out = (alu_rs1[7:4] == alu_rs2[7:4]);	//cmp4
@@ -84,17 +83,21 @@ task label_addr;
 	output [7:0]  label_address;
 		case(startPt)
 			8'b0: begin
-				case(label_num)
-					8'b0:  label_address = 8'b00001011;
-					8'b1:  label_address = 8'b00100101;
-					8'b10: label_address = 8'b00101011;
-					8'b11: label_address = 8'b00110100;
-					8'b100: label_address = 8'b00111000;
+				case(label_num)	
+					//8'b0:    label_address = 8'b00000101;
+					8'b0:    label_address = 8'b00001011; //loop1
+					8'b1:    label_address = 8'b00010110; //st_loop2
+					8'b10:   label_address = 8'b00100011; //lowBitL
+					8'b11:   label_address = 8'b00101110; //st_HBL
+					8'b100:  label_address = 8'b00110111; //HBLO
+					8'b101:  label_address = 8'b01000010; //HBLI
+					8'b110:  label_address = 8'b01001101; //EndInner
+					8'b111:  label_address = 8'b01010100; //exit
 				endcase
 			end
 			8'b01000000: begin
 				case(label_num)
-					8'b0:  label_address = 8'b01001010; //loop1
+					8'b0:  label_address = 8'b00001011; //loop1
 					8'b1:  label_address = 8'b01010010; //st_loop2
 					8'b10:  label_address = 8'b01011111; //lowBitL
 					8'b11:  label_address = 8'b01100110; //st_HBL

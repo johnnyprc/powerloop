@@ -8,12 +8,10 @@ module decoder(
 	output 	memRead_o,
 	output   memWrite_o,
 	output	labelRead_o,
-	output 	labelWrite_o,
 	output	[1:0] constant_o,
 	output 	regWrite_o,
 	output	halt_o,
-	output 	branch_o,
-	output	another_mem_o
+	output 	branch_o
 );
 
 
@@ -25,12 +23,10 @@ reg [3:0] branchAddr;
 reg memRead;
 reg memWrite;
 reg labelRead;
-reg labelWrite;
 reg [1:0] constant;
 reg regWrite;
 reg halt;
 reg branch;
-reg mem_write_again;
 
 assign alu_op_o = alu_op;
 assign regSource1_o = regSource1;
@@ -38,14 +34,13 @@ assign regSource2_o = regSource2;
 assign regDest_o = regDest;
 assign branchAddr_o = branchAddr;
 assign memRead_o = memRead;
-assign memwrite_o = memWrite;
+assign memWrite_o = memWrite;
 assign labelRead_o = labelRead;
-assign labelWrite_o = labelWrite;
 assign constant_o = constant;
 assign regWrite_o = regWrite;
 assign halt_o = halt;
 assign branch_o = branch;
-assign another_mem_o = mem_write_again;
+
 
 always_comb begin
 	case(instr[7:4]) 
@@ -56,9 +51,8 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			halt = 0;
@@ -70,9 +64,8 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = instr[1:0];
 			regWrite = 1;
 			branch = 0;
@@ -84,24 +77,22 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 1;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			halt = 0;
 		end
 		4'b11: begin //st
-			alu_op = 4'b1111;
+			alu_op = 4'b1100;
 			regSource1 = instr[3:2];
 			regSource2 = instr[1:0];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 1;
+			memWrite = 1;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 0;	
 			branch = 0;	
@@ -113,9 +104,8 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = instr[1:0];
 			regWrite = 1;
 			branch = 0;		
@@ -127,22 +117,22 @@ always_comb begin
 		4'b110: begin //beq0
 			alu_op = 4'b0101;
 			branchAddr = instr[3:0];
+			regSource2 = 3'b100;
+			branch = 1;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 1;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 0;		
-			branch = 1;
 			halt = 0;
 		end
 		4'b111: begin //j
 			alu_op = 4'b1011;
 			branchAddr = instr[3:0];
+			regSource1 = 3'b111;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 1;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 0;
 			branch = 0;
@@ -155,9 +145,8 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
@@ -169,9 +158,8 @@ always_comb begin
 			regDest = 3'b100;				//v0 at 4
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
@@ -183,9 +171,8 @@ always_comb begin
 			regDest = instr[2:0];				
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;	
@@ -198,9 +185,8 @@ always_comb begin
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
@@ -212,9 +198,8 @@ always_comb begin
 			regDest = instr[2:0];
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
@@ -227,9 +212,8 @@ always_comb begin
 			regDest = 3'b100;
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 1;
 			branch = 0;
@@ -244,9 +228,8 @@ always_comb begin
 			regDest = instr[2:0];				
 			branchAddr = 4'b0;
 			memRead = 0;
-			mem_write_again = 0;
+			memWrite = 0;
 			labelRead = 0;
-			labelWrite = 0;
 			constant = 0;
 			regWrite = 0;
 			branch = 0;

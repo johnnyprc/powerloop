@@ -1,0 +1,13 @@
+module EXMEM(
+	input [7:0] data_in,
+	output [7:0] data_out
+);
+
+reg [7:0] instr_o;
+assign instruction_o = instr_o;
+
+always_comb begin
+	instr_o = instruction;
+end
+
+endmodule

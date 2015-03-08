@@ -1,0 +1,48 @@
+module IDEX(
+	input clk,
+	input [7:0] data_in1,
+	input [7:0] data_in2,
+	input memRead_i,
+	input memWrite_i,
+	input labelRead_i,
+	input labelWrite_i,
+	input	[1:0] constant_i,
+	input regWrite_i,
+	input	halt_i,
+	input branch_i,
+	input pipelineEnable,
+	output [7:0] data_out1,
+	output [7:0] data_out2,
+	output memRead_o,
+	output memWrite_o,
+	output labelRead_o,
+	output labelWrite_o,
+	output [1:0] constant_o,
+	output regWrite_o,
+	output halt_o,
+	output branch_o
+);
+
+reg memRead;
+reg memWrite;
+reg labelRead;
+reg labelWrite;
+reg [1:0] constant;
+reg regWrite;
+reg halt;
+reg branch;
+
+assign memRead_o = memRead;
+assign memWrite_o = memWrite;
+assign labelRead_o = labelRead;
+assign labelWrite_o = labelWrite;
+assign constant_o = constant;
+assign regWrite_o = regWrite;
+assign halt_o = halt;
+assign branch_o = branch;
+
+always_ff(posedge clk) begin
+	instr_o = instruction;
+end
+
+endmodule

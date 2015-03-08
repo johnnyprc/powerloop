@@ -15,7 +15,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 14.1.0 Build 186 12/03/2014 SJ Web Edition"
-// CREATED		"Thu Feb 19 18:58:56 2015"
+// CREATED		"Sat Mar 07 00:36:43 2015"
 
 
 module mux_0(sel,in1,in2,out);
