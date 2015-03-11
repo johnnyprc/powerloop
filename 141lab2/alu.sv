@@ -37,10 +37,6 @@ always_comb begin
 					alu_out = alu_rs1<<constant; //shl 
 					taken = 0;
 					end
-		4'b0100: begin
-					alu_out = $signed(alu_rs1) < $signed(alu_rs2); //stl 
-					taken = 0;
-					end
 		4'b0101: begin
 					label_addr(startAddr_i, alu_rs1, alu_out);
 					taken = (alu_rs2 == 0);		//beq0
@@ -73,6 +69,17 @@ always_comb begin
 					alu_out = alu_rs1;					//magic
 					taken = 0;
 					end
+		4'b1101: begin //stl
+					alu_out = (alu_rs1 < alu_rs2);
+					taken = 0;
+					end
+		4'b1110: begin //abs
+			if ($signed(alu_rs1) < 0)
+				alu_out = ~alu_rs1 + 1;
+			else
+				alu_out = alu_rs1;
+			taken = 0;
+		end
 		4'b1111: taken = 0;		//nop, set taken to 0
 	endcase
 end
@@ -84,7 +91,6 @@ task label_addr;
 		case(startPt)
 			8'b0: begin
 				case(label_num)	
-					//8'b0:    label_address = 8'b00000101;
 					8'b0:    label_address = 8'b00001011; //loop1
 					8'b1:    label_address = 8'b00010110; //st_loop2
 					8'b10:   label_address = 8'b00100011; //lowBitL
@@ -95,16 +101,22 @@ task label_addr;
 					8'b111:  label_address = 8'b01010100; //exit
 				endcase
 			end
-			8'b01000000: begin
+			8'b01011110: begin
 				case(label_num)
-					8'b0:  label_address = 8'b00001011; //loop1
-					8'b1:  label_address = 8'b01010010; //st_loop2
-					8'b10:  label_address = 8'b01011111; //lowBitL
-					8'b11:  label_address = 8'b01100110; //st_HBL
-					8'b100:  label_address = 8'b01101110; //HBLO
-					8'b101:  label_address = 8'b01111000; //HBLI
-					8'b110:  label_address = 8'b01111111; //EndInner
-					8'b111:  label_address = 8'b10000011; //exit
+					8'b0:   label_address = 8'b01101100; //outerloop
+					8'b1:   label_address = 8'b10001000; //innerloop
+					8'b10:  label_address = 8'b10010010; //endInner
+					8'b11:  label_address = 8'b10011110; //notEqual
+					8'b100: label_address = 8'b10100100; //exit
+				endcase
+			end
+			8'b10101011: begin
+				case(label_num)
+					8'b0:   label_address = 8'b11000000; //outer_while
+					8'b1:   label_address = 8'b11011100; //inner_while
+					8'b11:  label_address = 8'b11111111; //end_inner
+					8'b100: label_address = 8'b00000100; //exit
+					
 				endcase
 			end
 			default:

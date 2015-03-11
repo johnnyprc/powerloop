@@ -8,8 +8,9 @@ module totalTestbench();
 
 initial begin
 	start = 1;
-	start_addr = 8'b00000000;
-	//start_addr = 8'b01000000;
+	start_addr = 8'b00000000; //P1
+	//start_addr = 8'b01011110; //P2
+	//start_addr = 8'b10101011; //P3
 	halt = 0;
 	f_clk = 0;
 	#15 start = 0;

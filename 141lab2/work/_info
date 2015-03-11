@@ -10,189 +10,189 @@ cModel Technology
 dC:/Users/johnn_000/Dropbox/Lab2/141lab2
 valu
 Z0 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-!s110 1425792348
+Z1 !s110 1426068784
 !i10b 1
-!s100 kakkeRbbIX@nJla9XFB:_2
-IEJ5icZo2Oeej>YTLI]X2o3
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s100 5G1RKg26M46iF@C0kP]O31
+I@?F?Y3F2G^hZ0<_i<jMSL0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
 !s105 alu_sv_unit
 S1
-Z2 dC:/Users/johnn_000/Desktop/powerloop/141lab2
-w1425792322
+Z3 dC:/Users/johnn_000/Desktop/powerloop/141lab2
+w1426068455
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv
 L0 1
-Z3 OV;L;10.3c;59
+Z4 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1425792348.829000
+!s108 1426068784.795000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/alu.sv|
 !i113 1
-Z4 o-work work
+Z5 o-work work
 valu_testbench
 R0
-Z5 !s110 1425778868
+R1
 !i10b 1
 !s100 boA>BicoM<[d[`2MSQID]2
 IHnd5KC1Y]hPESLOIniW:62
-R1
+R2
 !s105 alu_testbench_sv_unit
 S1
-R2
-Z6 w1424325068
+R3
+Z6 w1424328668
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778868.800000
+!s108 1426068784.830000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/alu_testbench.sv|
 !i113 1
-R4
+R5
 vdecoder
 R0
-!s110 1425780405
-!i10b 1
-!s100 ]EYNH`:P<hfb;_C?7DAGg1
-I63ZRikE_65QEK4N=lK^]G0
 R1
+!i10b 1
+!s100 ?G=iNeenDJzWGj:KRS^6R3
+IGbaX=nQhMb1FBOBj`WDP93
+R2
 !s105 decoder_sv_unit
 S1
-R2
-w1425780402
+R3
+w1426067874
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425780405.786000
+!s108 1426068784.908000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/decoder.sv|
 !i113 1
-R4
+R5
 vEXMEM
 R0
-R5
+R1
 !i10b 1
 !s100 m@mzVVJkQb`oJ;mUQ;DBU1
 Ij:T@zDkRmc<DD@^dePhj?1
-R1
+R2
 !s105 EXMEM_sv_unit
 S1
-R2
-w1425625843
+R3
+w1425629443
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/EXMEM.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/EXMEM.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778868.923000
+!s108 1426068784.955000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/EXMEM.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/EXMEM.sv|
 !i113 1
-R4
+R5
 n@e@x@m@e@m
 vfetch_unit
 R0
-R5
+Z7 !s110 1426068785
 !i10b 1
-!s100 A7PcdZN9L>3d>njG9[W2C1
-IJfeWf49_eaL>[oDX:3F>;1
-R1
+!s100 DIm3PG=I6e>kQaW4z>a1i1
+I3[6Sf@kLI1km;h=Wn[QWf2
+R2
 !s105 fetch_unit_sv_unit
 S1
-R2
-w1425770023
+R3
+w1425855560
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778868.963000
+!s108 1426068784.987000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit.sv|
 !i113 1
-R4
+R5
 vfetch_unit_testbench
 R0
-Z7 !s110 1425778869
+R7
 !i10b 1
 !s100 mokFhKi8TinhGPCaijkEe3
 IQVdoH1Tj69ULeKbK0iRG]3
-R1
+R2
 !s105 fetch_unit_testbench_sv_unit
 S1
-R2
+R3
 R6
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.003000
+!s108 1426068785.033000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/fetch_unit_testbench.sv|
 !i113 1
-R4
+R5
 vforward_unit
 R0
 R7
 !i10b 1
 !s100 Xce60[3gfWIYEDI4Ob=z;2
 IReVP8N@m@Rg?Bb_dIj[=O3
-R1
+R2
 !s105 forward_unit_sv_unit
 S1
-R2
-w1425716086
+R3
+w1425975803
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/forward_unit.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/forward_unit.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.070000
+!s108 1426068785.065000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/forward_unit.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/forward_unit.sv|
 !i113 1
-R4
+R5
 vhazardDetector
 R0
 R7
 !i10b 1
 !s100 Pn0BODKWQF>_5zCNUfh:41
 Ij=Y30X7jFNn_89i_7?5F<1
-R1
+R2
 !s105 hazardDetector_sv_unit
 S1
-R2
-w1425520796
+R3
+w1425524396
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/hazardDetector.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/hazardDetector.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.112000
+!s108 1426068785.112000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/hazardDetector.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/hazardDetector.sv|
 !i113 1
-R4
+R5
 nhazard@detector
 vIDEX
 R0
@@ -200,23 +200,23 @@ R7
 !i10b 1
 !s100 J@iCUGN]YOP6HT]ZiN2mG0
 I1=QYoWT<NNo@=B`FHbbd@3
-R1
+R2
 !s105 IDEX_sv_unit
 S1
-R2
-w1425707004
+R3
+w1425710604
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/IDEX.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/IDEX.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.151000
+!s108 1426068785.143000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/IDEX.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/IDEX.sv|
 !i113 1
-R4
+R5
 n@i@d@e@x
 vIFID
 R0
@@ -224,90 +224,90 @@ R7
 !i10b 1
 !s100 8zdXmPUiVLO>HD_9JG=8I0
 IC^IJe5?:kn^^V:=cZP@381
-R1
+R2
 !s105 IFID_sv_unit
 S1
-R2
-w1425621031
+R3
+w1425624631
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/IFID.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/IFID.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.190000
+!s108 1426068785.190000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/IFID.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/IFID.sv|
 !i113 1
-R4
+R5
 n@i@f@i@d
 vinst_rom
 R0
-!s110 1425793204
+R7
 !i10b 1
-!s100 1>CMLFFaWC=b[G@`2<<MF2
-IdPVeh7UBS<Mh?z07M?HjF0
-R1
+!s100 i][IQZM80P=;ec^BC<YOW3
+Ie68WBHR]BD5_b6fGYD@[:0
+R2
 !s105 rom_sv_unit
 S1
-R2
-w1425793197
+R3
+w1426068561
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425793204.463000
+!s108 1426068785.502000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/rom.sv|
 !i113 1
-R4
+R5
 vlab2
 R7
 !i10b 1
 !s100 :CH?EC@@cU9Yl79EMk1Dm1
 I^E@4P_hP34cR0iV6=Fggz0
-R1
 R2
-Z8 w1425717403
+R3
+Z8 w1425721003
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v
 L0 20
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.230000
+!s108 1426068785.221000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/lab2.v|
 !i113 1
-R4
+R5
 vMEMWB
 R0
 R7
 !i10b 1
 !s100 lZ<bUGO_dWDA3@QbMGdi23
 IN[?FGfH]4lFWTO10FbB<=1
-R1
+R2
 !s105 MEMWB_sv_unit
 S1
-R2
-w1425626889
+R3
+w1425630489
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/MEMWB.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/MEMWB.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.273000
+!s108 1426068785.268000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/MEMWB.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/MEMWB.sv|
 !i113 1
-R4
+R5
 n@m@e@m@w@b
 vmux
 R0
@@ -315,193 +315,193 @@ R7
 !i10b 1
 !s100 UVcCAF_n1SLVK1=fiCXYY1
 IGK;nEAh3bzc2^8HgJY8@R2
-R1
+R2
 !s105 mux_sv_unit
 S1
-R2
+R3
 R6
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.312000
+!s108 1426068785.315000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/mux.sv|
 !i113 1
-R4
+R5
 vmux_0
 R7
 !i10b 1
 !s100 fiY`]bMBf?kAoDSMX[^f23
 IlAGkT5YckIHYed2>^B;Go0
-R1
 R2
+R3
 R8
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v
 Z9 L0 21
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.352000
+!s108 1426068785.346000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_0.v|
 !i113 1
-R4
+R5
 vmux_1
 R7
 !i10b 1
 !s100 R5jGakhokBgXnc66]ZV^A3
 IbBE`AKl2QUdUeaP]zC_<I0
-R1
 R2
+R3
 R8
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v
 R9
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.394000
+!s108 1426068785.377000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_1.v|
 !i113 1
-R4
+R5
 vmux_2
 R7
 !i10b 1
 !s100 EoI=fRLgzEGF;OV^00E9U1
 Ibhd242X2e1C5l4b<T7Ph[0
-R1
 R2
+R3
 R8
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_2.v
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/mux_2.v
 R9
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.431000
+!s108 1426068785.424000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_2.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/mux_2.v|
 !i113 1
-R4
+R5
 vregister_file
 R0
 R7
 !i10b 1
 !s100 _o?[b2IO08:]]b<@[N;NZ3
 In?Z;zLB66SX^01hzgkdVD2
-R1
+R2
 !s105 register_file_sv_unit
 S1
-R2
-w1425622381
+R3
+w1425625981
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.468000
+!s108 1426068785.455000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/register_file.sv|
 !i113 1
-R4
+R5
 vrom_testbench
 R0
 R7
 !i10b 1
 !s100 fklD]c`CMofM[F0HemcAe2
 IN9E6M;gEeGRi=KMSn3EE]0
-R1
+R2
 !s105 rom_testbench_sv_unit
 S1
-R2
+R3
 R6
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.550000
+!s108 1426068785.533000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/rom_testbench.sv|
 !i113 1
-R4
-vsingle_port_ram_with_init
 R5
+vsingle_port_ram_with_init
+R1
 !i10b 1
 !s100 z:KnlZ@N>^[CL>c2IfPIU3
 IMU7[4TS1H27ZYjkULlNm`0
-R1
 R2
-w1424325325
+R3
+w1424328925
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v
 L0 5
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778868.841000
+!s108 1426068784.877000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/datamem.v|
 !i113 1
-R4
+R5
 vtestbench
 R0
 R7
 !i10b 1
 !s100 JKek=:RkW;aPbdCSdk@[]1
 I?8I>65:gCSLI7Vh54[ER30
-R1
+R2
 !s105 testbench_sv_unit
 S1
-R2
+R3
 R6
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.590000
+!s108 1426068785.580000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/testbench.sv|
 !i113 1
-R4
+R5
 vtotalTestbench
 R0
 R7
 !i10b 1
-!s100 R[YPD39G?Yd_gbJz`1jRL1
-IGgLm1@AMO<E>[Wh]fnnjf0
-R1
+!s100 ?f;RP6fhIFD:Sm3Wbg=Xk1
+IbHK]Q_g6XEmN`B7JMQD4:3
+R2
 !s105 totalTestBench_sv_unit
 S1
-R2
-w1425717461
+R3
+w1426068520
 8C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv
 FC:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-!s108 1425778869.632000
+!s108 1426068785.612000
 !s107 C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/johnn_000/Desktop/powerloop/141lab2/totalTestBench.sv|
 !i113 1
-R4
+R5
 ntotal@testbench

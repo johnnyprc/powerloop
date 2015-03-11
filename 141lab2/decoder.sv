@@ -61,6 +61,7 @@ always_comb begin
 		4'b1: begin //addi
 			alu_op = 4'b0001;
 			regSource1 = instr[3:2];
+			regSource2 = 3'bxxx;
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
@@ -73,6 +74,7 @@ always_comb begin
 		end
 		4'b10: begin //ld
 			alu_op = 4'b1111;
+			regSource1 = 3'bxxx;
 			regSource2 = instr[1:0];
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
@@ -89,6 +91,7 @@ always_comb begin
 			alu_op = 4'b1100;
 			regSource1 = instr[3:2];
 			regSource2 = instr[1:0];
+			regDest = 3'bxxx;
 			branchAddr = 4'b0;
 			memRead = 0;
 			memWrite = 1;
@@ -101,6 +104,7 @@ always_comb begin
 		4'b100: begin //shl
 			alu_op = 4'b0011;
 			regSource1 = instr[3:2];
+			regSource2 = 3'bxxx;
 			regDest = instr[3:2];
 			branchAddr = 4'b0;
 			memRead = 0;
@@ -112,12 +116,25 @@ always_comb begin
 			halt = 0;
 		end
 		4'b101: begin //stl
-	
+			alu_op = 4'b1101;
+			regSource1 = instr[3:2];
+			regSource2 = instr[1:0];
+			regDest = 3'b100;				//v0 at 4
+			branchAddr = 4'b0;
+			memRead = 0;
+			memWrite = 0;
+			labelRead = 0;
+			constant = 0;
+			regWrite = 1;
+			branch = 0;
+			halt = 0;
 		end
 		4'b110: begin //beq0
 			alu_op = 4'b0101;
 			branchAddr = instr[3:0];
+			regSource1 = 3'bxxx;
 			regSource2 = 3'b100;
+			regDest = 3'bxxx;
 			branch = 1;
 			memRead = 0;
 			memWrite = 0;
@@ -129,7 +146,9 @@ always_comb begin
 		4'b111: begin //j
 			alu_op = 4'b1011;
 			branchAddr = instr[3:0];
-			regSource1 = 3'b111;
+			regSource1 = 3'bxxx;
+			regSource2 = 3'bxxx;
+			regDest = 3'bxxx;
 			memRead = 0;
 			memWrite = 0;
 			labelRead = 1;
@@ -155,6 +174,7 @@ always_comb begin
 		4'b1001: begin //pushv
 			alu_op = 4'b1100;
 			regSource1 = instr[2:0];
+			regSource2 = 3'bxxx;
 			regDest = 3'b100;				//v0 at 4
 			branchAddr = 4'b0;
 			memRead = 0;
@@ -168,6 +188,7 @@ always_comb begin
 		4'b1010: begin //popv
 			alu_op = 4'b1100;
 			regSource1 = 3'b100;
+			regSource2 = 3'bxxx;
 			regDest = instr[2:0];				
 			branchAddr = 4'b0;
 			memRead = 0;
@@ -195,6 +216,7 @@ always_comb begin
 		4'b1100: begin //clr
 			alu_op = 4'b1000;
 			regSource1 = instr[2:0];
+			regSource2 = 3'bxxx;
 			regDest = instr[2:0];
 			branchAddr = 4'b0;
 			memRead = 0;
@@ -223,15 +245,17 @@ always_comb begin
 			halt = 1;
 			branch = 0;
 		end
-		4'b1111: begin //TBD
-			alu_op = 4'b1111;
-			regDest = instr[2:0];				
+		4'b1111: begin //abs
+			alu_op = 4'b1110;
+			regSource1 = instr[3:2];
+			regSource2 = 3'bxxx;			
+			regDest = instr[3:2];				
 			branchAddr = 4'b0;
 			memRead = 0;
 			memWrite = 0;
 			labelRead = 0;
 			constant = 0;
-			regWrite = 0;
+			regWrite = 1;
 			branch = 0;
 			halt = 0;
 		end
